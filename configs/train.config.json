@@ -1,0 +1,23 @@
+{
+  "task": "train",
+  "model": {
+    "name": "resnet_base",
+    "type": "ensemble"
+  },
+  "data": {
+    "name": "cifar100",
+    "preprocess": {
+      "zca": false,
+      "gcn": false
+    }
+  },
+  "optimizer": {
+    "name": "sgd"
+  },
+  "weight_decay": 0.0001,
+  "alpha": 0.5,
+  "lr": {
+    "0": 0.01
+  },
+  "epochs": 300
+}

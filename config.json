@@ -1,0 +1,20 @@
+{
+  "task": "predict",
+  "model": {
+    "name": "resnet",
+    "type": "npairs",
+    "restore": {
+      "uid": "0816-155845"
+    },
+    "path": "result/checkpoint/0816-155845/cifar100.resnet.npairs.ckpt"
+  },
+  "data": {
+    "name": "cifar100",
+    "type": "test",
+    "preprocess": {
+      "zca": false,
+      "gcn": false
+    },
+    "source": "result/dataset/0821-180233/fgsm.test.0821-175100.5.h5"
+  }
+}

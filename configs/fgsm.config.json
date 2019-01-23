@@ -1,0 +1,24 @@
+{
+  "task": "generate",
+  "model": {
+    "name": "resnet",
+    "type": "npairs",
+    "restore": {
+      "uid": "1020-160758",
+      "epoch": 300
+    },
+    "path": "result/checkpoint/1020-160758/cifar100.resnet_base.ensemble.epoch=300.ckpt"
+  },
+  "data": {
+    "name": "cifar100",
+    "type": "test",
+    "preprocess": {
+      "zca": false,
+      "gcn": false
+    }
+  },
+  "generate": {
+    "method": "fgsm",
+    "eps_list": [10, 5, 2, 1, 0]
+  }
+}
